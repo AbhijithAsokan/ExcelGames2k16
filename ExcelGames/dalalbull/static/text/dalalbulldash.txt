@@ -1,0 +1,707 @@
+<div style="border-bottom: 1px solid rgba(255, 255, 255, 0.14902);">
+                        <h4 class="page-title" style="position:fixed;">DALAL BULL</h4>
+                        <div class="ticker">
+                            <div id='dvStockTicker' class='stockTicker valign' style="overflow:hidden;"></div>
+                        </div>
+                </div>
+                                
+                <div class="block-area dash">
+                    <img src="img/sponsor/sponsor.png" style="margin-left:850px;position:absolute;">
+                    <a class="dashboard tile" data-toggle="modal" id="buy" href="#buy-modal">
+                        <img src="img/shortcuts/money.png" alt="">
+                        <small class="t-overflow">Buy/Short Sell</small>
+                    </a>
+                    <a class="dashboard tile" data-toggle="modal" href="#sell-modal">
+                        <img src="img/shortcuts/twitter.png" alt="">
+                        <small class="t-overflow">Sell/Short Cover</small>
+                    </a>
+                    <a class="dashboard tile" data-toggle="modal" href="#pending-modal">
+                        <img src="img/shortcuts/calendar.png" alt="">
+                        <small class="t-overflow">Pending Orders</small>
+                    </a>
+                    <a class="dashboard tile" data-toggle="modal" href="#transaction-modal">
+                        <img src="img/shortcuts/stats.png" alt="">
+                        <small class="t-overflow">Transaction History</small>
+                    </a>
+                    <a class="dashboard tile" data-toggle="modal" href="#stockinfo-modal">
+                        <img src="img/shortcuts/reports.png" alt="">
+                        <small class="t-overflow">Stock Information</small>
+                    </a>
+                    <a class="dashboard tile" data-toggle="modal" href="#help-modal">
+                        <img src="img/shortcuts/connections.png" alt="">
+                        <small class="t-overflow">Help</small>
+                    </a>
+                </div>
+                
+                <hr class="whiter">
+                
+                <!-- Quick Stats -->
+                <div class="block-area">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="row tile quick-stats" style="margin-left:1px;">
+                                <div class="col-md-4">
+                                    <h2 data-value="100000">0</h2>
+                                    <small>NET WORTH</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 30px;margin-top: 5px;">Cash Available<br>100000</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card1.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
+                                </div>                                    
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="row tile quick-stats media">
+                                <div class="col-md-4 media-body">
+                                    <h2 data-value="14">0</h2>
+                                    <small>Rank</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 15px;margin-top: 5px;">Total Players<br>50</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card2.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="row tile quick-stats media">
+                                <div class="col-md-4 media-body">
+                                    <h2 data-value="4000">0</h2>
+                                    <small>Margin</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 5px;margin-top: 5px;">No. of Transactions<br>50</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card3.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <div class="row tile quick-stats media">
+                                <div class="col-md-4 media-body">
+                                    <h2 data-value="290">0</h2>
+                                    <small>Nifty</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <p style="margin-left: 15px;margin-top: 5px;">Change<br>5%</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <img src="img/card4.svg" style="float:right;height:50px;width:50px;margin-right:10px;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr class="whiter" />
+                
+                <!-- Main Widgets -->
+               
+                <div class="block-area" id="main-widget">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- Main Chart -->
+                            <div class="tile" style="height:260px;">
+                                <h2 class="tile-title">Graph</h2>
+                                <div class="p-10">
+                                    <div id="line-chart" class="main-chart"></div>
+                                </div>  
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <!--Leaderboard-->
+                            <div class="tile">
+                                <h2 class="tile-title">Leaderboard</h2>
+                                <div class="listview narrow">
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/1.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="t-overflow marg" >Hari</a>   
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/2.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="t-overflow marg" >Sarath</a> 
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/3.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="t-overflow marg" >Roshan</a>
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/4.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="t-overflow marg" >Balram</a>                              
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;" >100000</a>
+                                        </div>
+                                    </div>
+                                    <div class="media p-l-5">
+                                        <div class="pull-left">
+                                            <img width="40" src="img/profile-pics/5.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="t-overflow marg">Athul</a>
+                                            <a class="t-overflow marg" style="font-size:11px;margin-top:5px;">100000</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="buy-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">BUY</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="company" class="col-md-3 control-label">Company</label>
+                                            <div class="col-md-7">
+                                                <select class="select">
+                                                    <div>
+                                                        <option>Default</option>
+                                                        <option>Toyota Avalon</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="quantity" class="col-md-3 control-label">Quantity</label>
+                                            <div class="col-md-7">
+                                                <input type="text" class="form-control input-sm" id="quantity" placeholder="...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="buystock" class="col-md-3 control-label">Buy/Short Sell</label>
+                                            <div class="col-md-7">
+                                                <select class="select">
+                                                    <div>
+                                                        <option>Buy</option>
+                                                        <option>Short Sell</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <h4 class="modal-title" style="text-align:center;font-size:13px;font-weight:100;text-transform: none;margin: 20px 0px 10px;">Pending Order</h4>                                        
+                                        <div class="form-group">
+                                            <label for="desired" class="col-md-3 control-label">Desired price</label>
+                                            <div class="col-md-7">
+                                                <input type="text" class="form-control input-sm" id="desired" placeholder="...">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="modal-sub">
+                                    <div class="modal-title" style="text-align:center;font-size:14px;">Transaction Details</div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Company&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> Josettan</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Trade Price&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">No. of Shares&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Type of Trade&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> Short Sell</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Total Value&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Brokerage&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 0.05</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Margin&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 50.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Cash Available&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100000.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="margin-top:-5px;">
+                                    <p style="display:inline-block;margin-left:15%;">Message</p>
+                                    <button type="button" class="btn btn-sm btn-alt" style="float:right;display:inline-block;">Buy Stock</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="sell-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">SELL</h4>
+                                </div>
+                                <div style="margin:15px;height:175px;overflow:auto;">
+                                    <table class="table tile">
+                                        <thead>
+                                            <tr>
+                                                <th>Company</th>
+                                                <th>Type of Trade</th>
+                                                <th>Shares in hand</th>
+                                                <th>Current Price</th>
+                                                <th>Gain</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jhon </td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Malinda</td>
+                                                <td>Hollaway</td>
+                                                <td>@hollway</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Wayn</td>
+                                                <td>Parnel</td>
+                                                <td>@wayne123</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jhon </td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Malinda</td>
+                                                <td>Hollaway</td>
+                                                <td>@hollway</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Wayn</td>
+                                                <td>Parnel</td>
+                                                <td>@wayne123</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                <div class="divider"></div>
+                                <form class="form-horizontal" role="form" style="margin: 10px 0px;">
+                                        <div class="form-group">
+                                            <label for="inputName4" class="col-md-4 control-label">Company</label>
+                                            <div class="col-md-5">
+                                                <select class="select">
+                                                    <div>
+                                                        <option>Default</option>
+                                                        <option>Toyota Avalon</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="noshares" class="col-md-4 control-label">No. of Shares</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control input-sm" id="noshares" placeholder="...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pendingprice" class="col-md-4 control-label">Pending Price</label>
+                                            <div class="col-md-5">
+                                                <input type="text" class="form-control input-sm" id="pendingprice" placeholder="...">
+                                            </div>
+                                        </div>
+                                </form>
+                                <div class="modal-footer" style="margin-top:0px;">
+                                    <p style="display:inline-block;margin-left:15%;">Message</p>
+                                    <button type="button" class="btn btn-sm btn-alt" style="float:right;display:inline-block;">Sell Stock</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="pending-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" style="width:700px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">Pending Orders</h4>
+                                </div>
+                                <div style="margin:15px;max-height:275px;overflow:auto;">
+                                    <table class="table tile">
+                                        <thead>
+                                            <tr>
+                                                <th>Company</th>
+                                                <th>Type of Order</th>
+                                                <th>Shares in hand</th>
+                                                <th>Current Price</th>
+                                                <th>Desired Price</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jhon </td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td>
+                                                <td style="padding-top: 6px;"><button type="button" class="btn btn-sm btn-alt" style="font-size:10px;padding: 2px 10px 2px;">CANCEL</button></td>                                              
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Malinda</td>
+                                                <td>Hollaway</td>
+                                                <td>@hollway</td>
+                                                <td>Lol</td>
+                                                <td style="padding-top: 6px;"><button type="button" class="btn btn-sm btn-alt" style="font-size:10px;padding: 2px 10px 2px;">CANCEL</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Wayn</td>
+                                                <td>Parnel</td>
+                                                <td>@wayne123</td>
+                                                <td>Lol</td>
+                                                <td style="padding-top: 6px;"><button type="button" class="btn btn-sm btn-alt" style="font-size:10px;padding: 2px 10px 2px;">CANCEL</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jhon </td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td>
+                                                <td style="padding-top: 6px;"><button type="button" class="btn btn-sm btn-alt" style="font-size:10px;padding: 2px 10px 2px;">CANCEL</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Malinda</td>
+                                                <td>Hollaway</td>
+                                                <td>@hollway</td>
+                                                <td>Makinton </td>
+                                                <td style="padding-top: 6px;"><button type="button" class="btn btn-sm btn-alt" style="font-size:10px;padding: 2px 10px 2px;">CANCEL</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Wayn</td>
+                                                <td>Parnel</td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td style="padding-top: 6px;"><button type="button" class="btn btn-sm btn-alt" style="font-size:10px;padding: 2px 10px 2px;">CANCEL</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer" style="margin-top:0px;">
+                                    <p style="display:inline-block;margin-left:15%;">Message</p>
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;display:inline-block;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="transaction-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" style="width:800px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">Transaction History</h4>
+                                </div>
+                                <div style="margin:15px;max-height:275px;overflow:auto;">
+                                    <table class="table tile">
+                                        <thead>
+                                            <tr>
+                                                <th>Order no.</th>
+                                                <th>Date & Time</th>
+                                                <th>Company</th>
+                                                <th>Type of Trade</th>
+                                                <th>No. of Shares</th>
+                                                <th>Cost per Share</th>
+                                                <th>Total Value</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jhon </td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>                                                
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Malinda</td>
+                                                <td>Hollaway</td>
+                                                <td>@hollway</td>
+                                                <td>Lol</td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Wayn</td>
+                                                <td>Parnel</td>
+                                                <td>@wayne123</td>
+                                                <td>Lol</td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Jhon </td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td><td>Makinton </td>
+                                                <td>@makinton</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Malinda</td>
+                                                <td>Hollaway</td>
+                                                <td>@hollway</td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Wayn</td>
+                                                <td>Parnel</td>
+                                                <td>Makinton </td>
+                                                <td>@makinton</td>
+                                                <td>@wayne123</td>
+                                                <td>Lol</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                <div class="modal-footer" style="margin-top:0px;">
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;display:inline-block;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="stockinfo-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">Stock Information</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="company" class="col-md-3 control-label">Company</label>
+                                            <div class="col-md-7">
+                                                <select class="select">
+                                                    <div>
+                                                        <option>Default</option>
+                                                        <option>Toyota Avalon</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+			        <option>Default</option>
+                                                        <option>Toyota Avalon</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                        <option>Toyota Crown</option>
+                                                        <option>Lexus LX570</option>
+                                                    </div>
+                                                </select>
+                                            </div>
+                                        </div>                                                    
+                                    </form>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Open&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Current Price&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">High&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 10</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Low&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> Short Sell</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Change&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 0.05</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">% Change&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 50.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Trade Qty (Lacs)&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100000.00</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p style="text-align:right;">Trade Value (Crores)&nbsp;&nbsp;&nbsp;:</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p> 100000.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="margin-top:-5px;">
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="modal fade" id="help-modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" style="width:700px;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" style="text-align:center;">Help</h4>
+                                </div>
+                                <div class="modal-body" style="height:400px;overflow:auto;">
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>What is share/stock ?</strong></h4>
+                                    <p style="margin:10px;">In simple words, a share or stock is a document issued by a company, which entitles its holder to be one of the owners of the company.Shares are issued by a company or can be purchased from the stock market. By holding a share you are entitled to get dividends from the company profit and by sale of your holdings you get capital gain by the rule of thumb, if the share value at the time of sale is higher than your purchase value.However, you also run a risk of making a capital loss if you have to sell the share at a price below your purchase price.A company's stock price reflects what investors think about the stock, not necessarily what the company is "worth". <br>
+For example, companies that showcase high growth rate often trade at a price higher than the company's actual worth.Stock prices of specific sector gets affected by all forms of news regarding that sector. Publicly traded companies are required to report quarterly on their financial status and earnings. Market sentiments and general investor opinions can also affect share prices.</p>
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>Who is a stock broker ?</strong></h4>
+                                    <p style="margin:10px;">A Stock Broker is a person or a Firm that trades on its clients' behalf. You tell them where you want to invest in and they will issue the transaction order. You will have to pay brokerage for the service of the broker. Some stock brokers also give out financial advice for which you are charged extra.</p>
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>Buy/Short sell</strong></h4>
+                                    <p style="margin:10px;">
+                                        Buy<br>Clear from the term BUY a stock with the money you have....as simple as that<br><br>Short Sell<br>When an investor goes LONG on an investment, it means he/she has bought a stock believing its price will rise in the future. Conversely, when an investor goes SHORT, he is anticipating a decrease in share price.
+Short selling is selling of a stock that the seller doesn't own. More specifically, a short sale is the sale of a security that isn't owned by the seller, but that is promised to be delivered. That may sound confusing, but it's actually a simple concept.<br><br>Still with us? Then lets see more: When you Short Sell a stock, your broker will lend it to you. The stock will come from the broker's own inventory, from another one of the Firm's customers, or from another brokerage Firm. The shares are sold and the proceeds are credited to your account. Sooner or later you must "close" the short by buying back the same number of shares (called Covering) and return them to your broker. If the price drops, you can buy back the stock at the lower price and make a profit on the difference. If the price of the stock rises, you have to buy it back at the higher price, and you lose money.<br><br>Limit Trading<br>Limit Trading - When you started playing the game you might have seen the field that says Pending Order, well this is what limit trading is all about. Here you may mention a price at which you want the shares to be bought or sold if you are not happy with the current price. In DALAL BULL, all the pending transactions that has not yet executed will be cancelled automatically when the market closes (i.e. at 15:30). So set the limit which may reach the target before 15.30. You will have to pay brokerage only for the executed transactions.                       </p>
+                                    <h4 class="modal-title" style="font-size:12px;"><strong>Sell/Short Cover</strong></h4>
+                                    <p style="margin:10px;">Sell<br>
+                                        This is all about selling what you bought....thats it!<br><br>
+                                        Short Cover<br>
+                                        This is the process by which you buy back the shares that you already Short sold. First you sell and then you buy (just the opposite of the actual transactions of buying and selling). But the catch is, when the market closes at 15.30, all the shares that you have Short Sold & not Short Covered, will automatically be Short Covered (i.e. bought back)
+                                    </p>
+                                </div>
+                                <div class="modal-footer" style="margin-top:1px;">
+                                    <button type="button" data-dismiss="modal" class="btn btn-sm btn-alt" style="float:right;">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

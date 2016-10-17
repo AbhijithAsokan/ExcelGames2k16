@@ -1,0 +1,77 @@
+<div class="block-area" style="margin-top:10%;z-index:7;">
+
+<div class="row">
+                        <div class="col-md-2 col-xs-6">
+                            <div class="tile quick-stats" style="z-index:7;border: 1.5px rgba(2, 255, 255, 0) solid;background:;color:rgba(2, 255, 255, 0.55);text-align:center;">
+                                <div id="stats-line-2" class="pull-left"></div>
+                                <div class="data">
+                                    <h2 data-value="98">0</h2>
+                                    <small style="color:rgba(2, 255, 255, 0.55);text-align:center;">DALALBULL</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-6"></div>
+                        <div class="col-md-2 col-xs-6">
+                            <div class="tile quick-stats" style="z-index:7;border: 1.5px rgba(2, 255, 255, 0) solid;background:;color:rgba(2, 255, 255, 0.55);text-align:center;">
+                                <div id="stats-line-2" class="pull-left"></div>
+                                <div class="data">
+                                    <h2 data-value="98">0</h2>
+                                    <small style="color:rgba(2, 255, 255, 0.55);text-align:center;">KRYPTOS</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6">
+                            <div class="tile quick-stats" style="z-index:7;border: 1.5px rgba(2, 255, 255, 0) solid;background:;color:rgba(2, 255, 255, 0.55);text-align:center;">
+                                <div id="stats-line-2" class="pull-left"></div>
+                                <div class="data">
+                                    <h2 data-value="98">0</h2>
+                                    <small style="color:rgba(2, 255, 255, 0.55);text-align:center;">HACKMASTER</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-6"></div>
+                        <div class="col-md-2 col-xs-6">
+                            <div class="tile quick-stats" style="z-index:7;border: 1.5px rgba(2, 255, 255, 0) solid;background:;color:rgba(2, 255, 255, 0.55);text-align:center;">
+                                <div id="stats-line-2" class="pull-left"></div>
+                                <div class="data">
+                                    <h2 data-value="98">0</h2>
+                                    <small style="color:rgba(2, 255, 255, 0.55);text-align:center;">#INCLUDE</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6">
+                            <div class="tile quick-stats" style="z-index:7;border: 1.5px rgba(2, 255, 255, 0) solid;background:;color:rgba(2, 255, 255, 0.55);text-align:center;">
+                                <div id="stats-line-2" class="pull-left"></div>
+                                <div class="data">
+                                    <h2 data-value="98">0</h2>
+                                    <small style="color:rgba(2, 255, 255, 0.55);text-align:center;">/BIN/BASH</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-xs-6"></div>
+                        <div class="col-md-2 col-xs-6">
+                            <div class="tile quick-stats" style="z-index:7;border: 1.5px rgba(2, 255, 255, 0) solid;background:;color:rgba(2, 255, 255, 0.55);text-align:center;">
+                                <div id="stats-line-2" class="pull-left"></div>
+                                <div class="data">
+                                    <h2 data-value="98">0</h2>
+                                    <small style="color:rgba(2, 255, 255, 0.55);text-align:center;">TECHGEEK</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<div class="jarvis" style="margin-left:27%;margin-top:-35%;">
+    <img class="l" style="z-index:1;width:400px;margin-top:120px;margin-left:120px;" src="/static/img/jarvis/6.png">
+    <img class="r" style="z-index:1;width:370px;margin-top:135px;margin-left:135px;" src="/static/img/jarvis/5.png">
+    <img class="l" style="z-index:1;width:280px;margin-top:180px;margin-left:180px;" src="/static/img/jarvis/4.png">
+    <img class="r" style="z-index:1;width:230px;margin-top:205px;margin-left:205px;" src="/static/img/jarvis/3.png">
+    <img class="l" style="z-index:1;width:140px;margin-top:252px;margin-left:250px;" src="/static/img/jarvis/2.png">
+    <!--<img class="play" style="z-index:1;width:100px;margin-top:299px;margin-left:273px;opacity:1;" src="/static/img/jarvis/1.png">-->
+    <div class="core2"></div>
+</div>
+</div>

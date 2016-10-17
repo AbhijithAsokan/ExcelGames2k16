@@ -1,0 +1,97 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dalalbull Channel </title>
+	<script type="text/javascript" src="/static/js/jquery-1.12.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/reconnecting-websocket.min.js"></script>
+	<script type="text/javascript" src="/static/js/connect_to_channels.js"></script>
+
+	<style type="text/css">
+		div{
+			margin: 30px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div style="display:flex;">
+
+	<div>
+		
+		<h1> Nifty data </h1>
+
+		<h2 id="nifty-count"> </h2>
+		<div id="nifty-data">
+
+		</div>
+	</div>
+
+
+	<div>
+		
+		<h1> Leaderboard data </h1>
+
+		<h2 id="leaderboard-count"> </h2>
+
+		<div id="leaderboard-data">
+
+		</div>
+		</table>
+	</div>
+
+
+	</div>
+
+	<hr>
+
+	<div style="display:flex;">
+
+	<div>
+		
+		<h1> Graph data </h1>
+		<h2 id="graph-count"> </h2>
+		<div id="graph-data">
+
+		</div>
+
+
+	
+	
+		<select id="company">
+			<option value="NIFTY 50" > NIFTY 50 </option>
+			<option value="INFY" > INFY </option>
+			<option value="TCS" > TCS </option>
+		</select>
+		<button id="submit"> send </button> 
+	
+	</div>
+
+
+	<div>
+		
+		<h1> Portfolio </h1>
+		<h2 id="portfolio-count"> </h2>
+		<div id="portfolio-data">
+
+		</div>
+	
+	</div>
+
+
+	</div>
+
+	<div>
+		
+		<h1> Sell Data </h1>
+		<h2 id="sell-count"> </h2>
+		<div id="sell-data">
+
+		</div>
+	
+	</div>
+
+</body>
+</html>
