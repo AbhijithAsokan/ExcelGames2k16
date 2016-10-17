@@ -3,14 +3,14 @@
 	Dalalbull is a part of Excel 2016 online Games.
 	So to make easier to manage all the games, different games were separated and made as different Django App within the same project.
 	This repository has Only Dalalbull.
-
-	NOTE: The Market Opens at: 09:15 hours and Closes at: 15:30 hours.
-	So running this setup during the above time period is preferred.
 ------------------------------------------------------------------------------------------------------------------------
 
 --------------------
 ## Setting UP
 --------------------
+
+**NOTE: The Market Opens at: 09:15 hours and Closes at: 15:30 hours (Monday-Friday) IST.
+   So running this setup during the above time period is preferred.**
 
 ### 1. Install [Python Virtual Environment](https://github.com/pypa/virtualenv):<br>
     	pip install virtualenv
@@ -42,6 +42,10 @@
 			chmod +x run_dalalbull_celery.sh
 			./run_dalalbull_celery.sh
 	OR copy paste the instructions in terminal if you don't want to grant permissions.
+	
+	Visit: http://localhost:8000/ and sign with your Gmail account, don't use incognito mode.
+	then 
+	Visit: http://localhost:8000/dalalbull/
 			
 
 ### EDITS TO DO
